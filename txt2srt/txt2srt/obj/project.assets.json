@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\konyicska.kristof\\source\\repos\\txt2srt\\txt2srt\\txt2srt.csproj",
+      "projectUniqueName": "C:\\Users\\konyicska.kristof\\Source\\Repos\\txt2str\\txt2srt\\txt2srt\\txt2srt.csproj",
       "projectName": "txt2srt",
-      "projectPath": "C:\\Users\\konyicska.kristof\\source\\repos\\txt2srt\\txt2srt\\txt2srt.csproj",
+      "projectPath": "C:\\Users\\konyicska.kristof\\Source\\Repos\\txt2str\\txt2srt\\txt2srt\\txt2srt.csproj",
       "packagesPath": "C:\\Users\\konyicska.kristof\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\konyicska.kristof\\source\\repos\\txt2srt\\txt2srt\\obj\\",
+      "outputPath": "C:\\Users\\konyicska.kristof\\Source\\Repos\\txt2str\\txt2srt\\txt2srt\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\konyicska.kristof\\AppData\\Roaming\\NuGet\\NuGet.Config",

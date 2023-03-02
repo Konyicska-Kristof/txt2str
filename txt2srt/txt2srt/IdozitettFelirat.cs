@@ -11,31 +11,31 @@ namespace txt2srt
     {
         public string Idozites;
         public string Felirat;
-        public IdozitettFelirat(string Sor)
+
+        public int Szavakszama => Felirat.Split().Length;
+
+        public string SrtIdozites
         {
-            int i = 0;
-            bool not_int = false;
-            while (i<10 || not_int!=true)
+            get
             {
-                if (Sor.First() != char.Parse(i.ToString()))
-                {
-                    not_int = true;
-                }
-                i++;
-                
-            }
+                var ti = Idozites.Split(" - ");
 
-            if (not_int==true)
-            {
-                Felirat = Sor;
-            }
-            else
-            {
-                 Idozites = Sor;
-            }
-            
+                var top = ti[0].Split(":");
+                var iop = ti[1].Split(":");
 
+                TimeSpan tol = new(hours: 0, minutes:  int.Parse(top[0]), seconds: int.Parse(top[1]));
+                TimeSpan ig = new(hours: 0, minutes: int.Parse(iop[0]), seconds: int.Parse(iop[1]));
+
+                return $"{tol} --> {ig}"; 
+            }
         }
+        public IdozitettFelirat(string idozites, string felirat)
+        {
+            Idozites = idozites;
+            Felirat = felirat;            
+        }
+
+
 
     }
 }
